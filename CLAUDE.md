@@ -41,10 +41,12 @@ xcodebuild test -project Cashburn.xcodeproj -scheme Cashburn -only-testing:Cashb
 ```
 Cashburn/
 ├── Cashburn/                      # Main application target
-│   ├── CashburnApp.swift          # App entry point (@main) with SwiftData container
-│   ├── ContentView.swift          # Main view with subscription list and total
+│   ├── CashburnApp.swift          # App entry point (@main) with SwiftData container and migration
+│   ├── ContentView.swift          # Main view with list selector and subscriptions
 │   ├── Subscription.swift         # SwiftData model for subscriptions
+│   ├── SubscriptionList.swift     # SwiftData model for organizing subscriptions
 │   ├── SubscriptionFormView.swift # Add/edit subscription form
+│   ├── ListManagerView.swift      # Manage lists (add/delete/rename)
 │   ├── SettingsView.swift         # Currency selection settings
 │   └── Assets.xcassets/           # Asset catalog
 ├── CashburnTests/                 # Unit tests using Swift Testing framework
@@ -55,26 +57,34 @@ Cashburn/
 
 ### Data Layer
 - **SwiftData** for persistence: The app uses SwiftData (Apple's modern persistence framework)
-- `Subscription` model stores: name, monthlyCost (Double), createdAt (Date)
-- SwiftData container configured in `CashburnApp.swift` with `.modelContainer(for: Subscription.self)`
+- `Subscription` model stores: name, monthlyCost (Double), createdAt (Date), list (SubscriptionList relationship)
+- `SubscriptionList` model stores: name, createdAt (Date), subscriptions (one-to-many relationship)
+- **Automatic migration**: On app launch, orphaned subscriptions are moved to a default "Personal" list
+- SwiftData container configured in `CashburnApp.swift` with both models
 - All data persists automatically to local storage
 
 ### Views
-- **ContentView**: Main interface with subscription list, total cashburn display, and toolbar actions
-  - Uses `@Query` to fetch subscriptions sorted by name
-  - Uses **Liquid Glass** design with `.ultraThinMaterial` backgrounds for macOS Tahoe 26.1
-  - Calculates total monthly cost dynamically across all subscriptions
-  - Supports tap-to-edit and swipe-to-delete
-  - Subscription rows use translucent material cards with rounded corners
+- **ContentView**: Main interface with list selector, subscriptions, and total
+  - **Segmented control**: Pill-style buttons to switch between lists (Personal, Company, etc.)
+  - **List manager button**: Ellipsis icon to open list management
+  - Filters subscriptions by selected list
+  - Uses **Liquid Glass** design with transparent backgrounds for macOS Tahoe 26.1
+  - Calculates total monthly cost for selected list only
+  - Receipt-style layout with separator before total
+  - Supports tap-to-edit and swipe-to-delete subscriptions
 - **SubscriptionFormView**: Modal sheet for adding/editing subscriptions
   - Input fields: name, monthly cost
+  - Automatically assigns subscription to currently selected list
   - Validates name is not empty and cost is positive
   - Reuses same form for both add and edit modes
-  - Uses Liquid Glass design with translucent backgrounds
+- **ListManagerView**: Manage subscription lists
+  - Add new lists with custom names
+  - Rename existing lists inline
+  - Delete lists (protected: can't delete last list)
+  - Prevents deleting selected list without switching first
 - **SettingsView**: Currency selection interface
   - Supports USD and EUR currencies
   - Currency preference stored via `@AppStorage`
-  - Uses Liquid Glass design materials
 
 ### Settings & Configuration
 - Currency code stored in UserDefaults via `@AppStorage("currencyCode")`

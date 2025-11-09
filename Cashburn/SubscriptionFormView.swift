@@ -14,6 +14,7 @@ struct SubscriptionFormView: View {
     @AppStorage("currencyCode") private var currencyCode = "USD"
 
     let subscription: Subscription?
+    let currentList: SubscriptionList?
 
     @State private var name: String = ""
     @State private var monthlyCost: String = ""
@@ -23,7 +24,14 @@ struct SubscriptionFormView: View {
     }
 
     private var isValid: Bool {
-        !name.isEmpty && Double(monthlyCost) != nil && Double(monthlyCost)! > 0
+        !name.isEmpty && parseAmount(monthlyCost) != nil && parseAmount(monthlyCost)! > 0
+    }
+
+    // Parse amount handling both comma and dot as decimal separator
+    private func parseAmount(_ text: String) -> Double? {
+        // Replace comma with dot for parsing
+        let normalized = text.replacingOccurrences(of: ",", with: ".")
+        return Double(normalized)
     }
 
     private var currencySymbol: String {
@@ -47,6 +55,13 @@ struct SubscriptionFormView: View {
                         TextField("0.00", text: $monthlyCost)
                             .textFieldStyle(.plain)
                             .font(.body)
+                            .onChange(of: monthlyCost) { oldValue, newValue in
+                                // Allow only numbers, dots, and commas
+                                let filtered = newValue.filter { "0123456789.,".contains($0) }
+                                if filtered != newValue {
+                                    monthlyCost = filtered
+                                }
+                            }
                     }
                 } header: {
                     Text("Subscription Details")
@@ -83,13 +98,13 @@ struct SubscriptionFormView: View {
     }
 
     private func saveSubscription() {
-        guard let cost = Double(monthlyCost) else { return }
+        guard let cost = parseAmount(monthlyCost) else { return }
 
         if let subscription {
             subscription.name = name
             subscription.monthlyCost = cost
         } else {
-            let newSubscription = Subscription(name: name, monthlyCost: cost)
+            let newSubscription = Subscription(name: name, monthlyCost: cost, list: currentList)
             modelContext.insert(newSubscription)
         }
 
@@ -98,12 +113,12 @@ struct SubscriptionFormView: View {
 }
 
 #Preview("Add") {
-    SubscriptionFormView(subscription: nil)
+    SubscriptionFormView(subscription: nil, currentList: nil)
         .modelContainer(for: Subscription.self, inMemory: true)
 }
 
 #Preview("Edit") {
     let subscription = Subscription(name: "GitHub", monthlyCost: 21.00)
-    return SubscriptionFormView(subscription: subscription)
+    return SubscriptionFormView(subscription: subscription, currentList: nil)
         .modelContainer(for: Subscription.self, inMemory: true)
 }

@@ -14,9 +14,12 @@ final class Subscription {
     var monthlyCost: Double
     var createdAt: Date
 
-    init(name: String, monthlyCost: Double) {
+    var list: SubscriptionList?
+
+    init(name: String, monthlyCost: Double, list: SubscriptionList? = nil) {
         self.name = name
         self.monthlyCost = monthlyCost
         self.createdAt = Date()
+        self.list = list
     }
 }
