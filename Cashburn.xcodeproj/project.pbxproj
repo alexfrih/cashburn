@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		ACDF274C2EC032FC00B9D6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDF27362EC032FB00B9D6FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDF273D2EC032FB00B9D6FF;
+			remoteInfo = Cashburn;
+		};
+		ACDF27562EC032FC00B9D6FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDF27362EC032FB00B9D6FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDF273D2EC032FB00B9D6FF;
+			remoteInfo = Cashburn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACDF273E2EC032FB00B9D6FF /* Cashburn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashburn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDF274B2EC032FC00B9D6FF /* CashburnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashburnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDF27552EC032FC00B9D6FF /* CashburnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashburnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ACDF27402EC032FB00B9D6FF /* Cashburn */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Cashburn;
+			sourceTree = "<group>";
+		};
+		ACDF274E2EC032FC00B9D6FF /* CashburnTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CashburnTests;
+			sourceTree = "<group>";
+		};
+		ACDF27582EC032FC00B9D6FF /* CashburnUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CashburnUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACDF273B2EC032FB00B9D6FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27482EC032FC00B9D6FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27522EC032FC00B9D6FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACDF27352EC032FB00B9D6FF = {
+			isa = PBXGroup;
+			children = (
+				ACDF27402EC032FB00B9D6FF /* Cashburn */,
+				ACDF274E2EC032FC00B9D6FF /* CashburnTests */,
+				ACDF27582EC032FC00B9D6FF /* CashburnUITests */,
+				ACDF273F2EC032FB00B9D6FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACDF273F2EC032FB00B9D6FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACDF273E2EC032FB00B9D6FF /* Cashburn.app */,
+				ACDF274B2EC032FC00B9D6FF /* CashburnTests.xctest */,
+				ACDF27552EC032FC00B9D6FF /* CashburnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACDF273D2EC032FB00B9D6FF /* Cashburn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDF275F2EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "Cashburn" */;
+			buildPhases = (
+				ACDF273A2EC032FB00B9D6FF /* Sources */,
+				ACDF273B2EC032FB00B9D6FF /* Frameworks */,
+				ACDF273C2EC032FB00B9D6FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ACDF27402EC032FB00B9D6FF /* Cashburn */,
+			);
+			name = Cashburn;
+			packageProductDependencies = (
+			);
+			productName = Cashburn;
+			productReference = ACDF273E2EC032FB00B9D6FF /* Cashburn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACDF274A2EC032FC00B9D6FF /* CashburnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDF27622EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "CashburnTests" */;
+			buildPhases = (
+				ACDF27472EC032FC00B9D6FF /* Sources */,
+				ACDF27482EC032FC00B9D6FF /* Frameworks */,
+				ACDF27492EC032FC00B9D6FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDF274D2EC032FC00B9D6FF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ACDF274E2EC032FC00B9D6FF /* CashburnTests */,
+			);
+			name = CashburnTests;
+			packageProductDependencies = (
+			);
+			productName = CashburnTests;
+			productReference = ACDF274B2EC032FC00B9D6FF /* CashburnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACDF27542EC032FC00B9D6FF /* CashburnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDF27652EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "CashburnUITests" */;
+			buildPhases = (
+				ACDF27512EC032FC00B9D6FF /* Sources */,
+				ACDF27522EC032FC00B9D6FF /* Frameworks */,
+				ACDF27532EC032FC00B9D6FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDF27572EC032FC00B9D6FF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ACDF27582EC032FC00B9D6FF /* CashburnUITests */,
+			);
+			name = CashburnUITests;
+			packageProductDependencies = (
+			);
+			productName = CashburnUITests;
+			productReference = ACDF27552EC032FC00B9D6FF /* CashburnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACDF27362EC032FB00B9D6FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					ACDF273D2EC032FB00B9D6FF = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					ACDF274A2EC032FC00B9D6FF = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = ACDF273D2EC032FB00B9D6FF;
+					};
+					ACDF27542EC032FC00B9D6FF = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = ACDF273D2EC032FB00B9D6FF;
+					};
+				};
+			};
+			buildConfigurationList = ACDF27392EC032FB00B9D6FF /* Build configuration list for PBXProject "Cashburn" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACDF27352EC032FB00B9D6FF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ACDF273F2EC032FB00B9D6FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACDF273D2EC032FB00B9D6FF /* Cashburn */,
+				ACDF274A2EC032FC00B9D6FF /* CashburnTests */,
+				ACDF27542EC032FC00B9D6FF /* CashburnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACDF273C2EC032FB00B9D6FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27492EC032FC00B9D6FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27532EC032FC00B9D6FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACDF273A2EC032FB00B9D6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27472EC032FC00B9D6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF27512EC032FC00B9D6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACDF274D2EC032FC00B9D6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDF273D2EC032FB00B9D6FF /* Cashburn */;
+			targetProxy = ACDF274C2EC032FC00B9D6FF /* PBXContainerItemProxy */;
+		};
+		ACDF27572EC032FC00B9D6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDF273D2EC032FB00B9D6FF /* Cashburn */;
+			targetProxy = ACDF27562EC032FC00B9D6FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACDF275D2EC032FC00B9D6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACDF275E2EC032FC00B9D6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		ACDF27602EC032FC00B9D6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.Cashburn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ACDF27612EC032FC00B9D6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.Cashburn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ACDF27632EC032FC00B9D6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.CashburnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashburn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cashburn";
+			};
+			name = Debug;
+		};
+		ACDF27642EC032FC00B9D6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.CashburnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashburn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cashburn";
+			};
+			name = Release;
+		};
+		ACDF27662EC032FC00B9D6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.CashburnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Cashburn;
+			};
+			name = Debug;
+		};
+		ACDF27672EC032FC00B9D6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VP9U3RSL2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarbeam.CashburnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Cashburn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACDF27392EC032FB00B9D6FF /* Build configuration list for PBXProject "Cashburn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDF275D2EC032FC00B9D6FF /* Debug */,
+				ACDF275E2EC032FC00B9D6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDF275F2EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "Cashburn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDF27602EC032FC00B9D6FF /* Debug */,
+				ACDF27612EC032FC00B9D6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDF27622EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "CashburnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDF27632EC032FC00B9D6FF /* Debug */,
+				ACDF27642EC032FC00B9D6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDF27652EC032FC00B9D6FF /* Build configuration list for PBXNativeTarget "CashburnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDF27662EC032FC00B9D6FF /* Debug */,
+				ACDF27672EC032FC00B9D6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACDF27362EC032FB00B9D6FF /* Project object */;
+}
